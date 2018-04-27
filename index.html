@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/awesome/css/font-awesome.min.css">
 	
 	<!-- FavIcons -->
-	<link rel="shortcut icon" href="img/favicons/favicon-16.png"  type="image/x-icon" />
+	<link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" />
 
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -39,6 +39,7 @@
 	<![endif]-->
 	<!-- Header -->
 	<div class="header">
+		<!-- header inner -->
 		<div class="header__inner">
 			<nav class="navigation">
 				<div class="navigation__toggle navigation__toggle--fixed">
@@ -59,52 +60,102 @@
 
 			<div class="header__centered-content">
 				<div class="user-foto user-foto--shadow">
-					<img src="usercontent/img/photo-anna-big.jpg" alt="Анна Седакова">
+					<img src="usercontent/img/anna-small.jpg" alt="Анна Седакова">
 				</div>	
 				<h1 class="header__title">Анна Седакова</h1>
 				<h2 class="header__subtitle">HTML верстальщик сайтов</h2>
 			</div>
 
-<!-- mouse scroll -->
+			<!-- mouse scroll -->
 			<a href="#resume" class="mouse_scroll">
-					<div class="mouse">
-						<div class="wheel"></div>
-					</div>
-					<div>
-						<span class="m_scroll_arrows unu"></span>
-						<span class="m_scroll_arrows doi"></span>
-						<span class="m_scroll_arrows trei"></span>
-					</div>
+				<div class="mouse">
+					<div class="wheel"></div>
+				</div>
+				<div>
+					<span class="m_scroll_arrows unu"></span>
+					<span class="m_scroll_arrows doi"></span>
+					<span class="m_scroll_arrows trei"></span>
+				</div>
 			</a>
-<!-- //mouse scroll -->
+			<!-- //mouse scroll -->
 
 		</div>
+		<!-- // header inner -->
 	</div>
 	<!-- //Header -->
 
 	<!-- Резюме -->
-	<div id="resume" class="container">
-		<div class="row">
-			<div class="d-none d-md-block col-md-2 col-xl-3">
-				<div class="block">Фотография</div>
-			</div>
-			<div class="col-md-10 col-xl-9">
-				<div class="block">Резюме</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="block">Опыт работы</div>
-					</div>
-					<div class="col-md-6">
-						<div class="block">Образование</div>
-					</div>
+	<div id="resume" class="section section--bottom-line section--bg-leptop"> 
+		<div id="resume" class="container">
+			<div class="row">
+				<div class="d-none d-md-block col-md-2 col-xl-3">
+					<div class="user-foto user-foto--big">
+						<img src="usercontent/img/anna-big.jpg" alt="Анна Седакова">
+					</div>	
 				</div>
-				<div class="block">Скачать резюме</div>
+				<div class="col-md-10 col-xl-9">
+					<div class="heading">Резюме</div>
+					<p><strong>Анна Седакова</strong><br>
+						27 лет, Череповец, Россия
+					</p>
+					<p>
+						Родился и вырос. Закончил три класса церковно-приходской IT школы в Московской губернии. После чего «активно занимался самообразованием».
+					</p>
+					<!-- Опыт и образование -->
+					<div class="row">
+						<div class="col-md-6">
+							<div class="heading heading--medium">Опыт работы</div>
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def">декабрь — настоящее время</div>
+									<div class="definition-list__desc">
+										<p>Верстальщик в веб-студии “Веб-Старт”.</p>
+									</div>	
+								</li>
+								<li class="definition-list__item">
+									<div class="definition-list__def">октябрь 2015 — декабрь 2016</div>
+									<div class="definition-list__desc">
+										<p>Фрилансер, веб-дизайнер.</p>
+									</div>
+								</li>
+								<li class="definition-list__item">
+									<div class="definition-list__def">Сентябрь 2014 — Октябрь 2015</div>
+									<div class="definition-list__desc">
+										<p>«ООО Кибер Софт» — Системный администратор.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="heading heading--medium">Образование</div>
+							<ul class="definition-list">
+								<li class="definition-list__item">
+									<div class="definition-list__def">декабрь 2016</div>
+									<div class="definition-list__desc">
+										<p>Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru</p>
+									</div>	
+								</li>
+								<li class="definition-list__item">
+									<div class="definition-list__def">2008 — 2012</div>
+									<div class="definition-list__desc">
+										<p>Московский Государственный университет дизайна и технологий, специальность дизайнер-технолог.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // Опыт и образование -->
+
+					<div class="button">
+<i class="fa fa-download" aria-hidden="true"></i>
+					Скачать резюме</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- // Резюме -->
 
-	<div class="line"></div>
+	<!-- <div class="line"></div> -->
 
 	<!-- Мои работы -->
 	<div id="portfolio" class="container">
