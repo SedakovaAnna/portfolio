@@ -16,11 +16,33 @@
 	border-bottom: 1px solid #e9eff3;
 }
 
+.section--padding-smaller{
+	padding-bottom: 35px;
+	padding-top: 30px;
+
+	@media (min-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+
+	@media (min-width: 1200px) {
+		padding-top: 65px;
+		padding-bottom: 67px;
+	}
+}
 
 .section--bg-leptop {
 	@media (min-width: 1500px) {
-	background-image: url("../img/bg/laptop.png");
-	background-repeat: no-repeat;
-	background-position: right 70%;
+		background-image: url("../img/bg/laptop.png");
+		background-repeat: no-repeat;
+		background-position: right 70%;
+	}
+}
+
+.section--bg-gear {
+	@media (min-width: 1500px) {
+		background-image: url("../img/bg/gear.png");
+		background-repeat: no-repeat;
+		background-position: left 55%;
 	}
 }
