@@ -14,6 +14,7 @@
 	<!-- Syles -->
 	<link rel="stylesheet" href="libs/normalize.css">
 	<link rel="stylesheet" href="libs/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
 	
 	<link rel="stylesheet" href="css/main.css">
 
@@ -146,9 +147,9 @@
 					</div>
 					<!-- // Опыт и образование -->
 
-					<div class="button">
+					<a class="button" href="usercontent/pdf/Sedakova.pdf" download>
 						<i class="fa fa-download" aria-hidden="true"></i>
-					Скачать резюме</div>
+					Скачать резюме</a>
 				</div>
 			</div>
 		</div>
@@ -164,41 +165,42 @@
 		<div class="container">
 
 			<div class="heading heading--center">Мои работы</div>
+
 			<!-- Фильтр -->
-			<div class="filter">
-				<ul class="filter__block">
-					<li class="filter__element">
-						<span class="filter__button filter__button--active">Все</span>
+			<div class="filter-block">
+				<ul class="filter-block__block">
+					<li class="filter-block__element">
+						<span class="filter-block__button filter-block__button--active filter" data-filter="all">Все</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button">HTML+CSS</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".html-css">HTML+CSS</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button">Bootstrap</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".bootstrap">Bootstrap</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button">учебные</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".tutorial">учебные</span>
 					</li>
-					<li class="filter__element">
-						<span class="filter__button">на заказ</span>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".payed">на заказ</span>
 					</li>
 				</ul>
 			</div>
 			<!-- // Фильтр -->
 
-			<div class="row">
+			<div class="row" id="portfolio-projects">
 				<!-- Работа 1 -->
-				<div class="col-md-4">
+				<div class="col-md-4 mix html-css tutorial">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
-							<a href="#" class="portfolio-item__image-hover">
+							<a href="usercontent/img/full/organic.png" class="fancybox portfolio-item__image-hover" rel="group" title="Учебный макет Organica">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
 							</a>
 							<img src="usercontent/img/project_organica.jpg" alt="Учебный макет Organica">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Учебный макет Organica</a>
+							<a href="usercontent/img/full/organic.png" class="fancybox" rel="group1" title="Учебный макет Organica">Учебный макет Organica</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка одностраничного сайта по PSD макету.
@@ -208,17 +210,17 @@
 				<!-- //Работа 1 -->
 
 				<!-- Работа 2 -->
-				<div class="col-md-4">
+				<div class="col-md-4 mix bootstrap tutorial">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
-							<a href="#" class="portfolio-item__image-hover">
+							<a href="usercontent/img/full/apollo.png" class="fancybox portfolio-item__image-hover" rel="group" title="Учебный макет Apollo">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
 							</a>
 							<img src="usercontent/img/project_apollo.jpg" alt="Учебный макет Apollo">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Учебный макет Apollo</a>
+							<a href="usercontent/img/full/apollo.png" class="fancybox" rel="group1" title="Учебный макет Apollo">Учебный макет Apollo</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка лендинга хостинг компании. Мобильная адаптивность.
@@ -228,17 +230,17 @@
 				<!-- //Работа 2 -->
 
 				<!-- Работа 3 -->
-				<div class="col-md-4">
+				<div class="col-md-4 mix bootstrap tutorial">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
-							<a href="#" class="portfolio-item__image-hover">
+							<a href="usercontent/img/full/portfolio.png" class="fancybox portfolio-item__image-hover" rel="group" title="Личный сайт портфолио">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
 							</a>
 							<img src="usercontent/img/project_portfolio.jpg" alt="Личный сайт портфолио">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Личный сайт портфолио</a>
+							<a href="usercontent/img/full/portfolio.png" class="fancybox" rel="group1" title="Личный сайт портфолио">Личный сайт портфолио</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка личного сайта портфолио на котором вы сейчас находитесь.
@@ -246,21 +248,19 @@
 					</div>
 				</div>
 				<!-- //Работа 3 -->
-			</div>
 
-			<div class="row">
 				<!-- Работа 4 -->
-				<div class="col-md-4">
+				<div class="col-md-4 mix html-css payed">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
-							<a href="#" class="portfolio-item__image-hover">
+							<a href="usercontent/img/full/car-concept.png" class="fancybox portfolio-item__image-hover" rel="group" title="Промо сайт автомобиля">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
 							</a>
 							<img src="usercontent/img/project_auto.jpg" alt="Промо сайт автомобиля">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Промо сайт автомобиля</a>
+							<a href="usercontent/img/full/car-concept.png" class="fancybox" rel="group1" title="Промо сайт автомобиля">Промо сайт автомобиля</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка одностраничного сайта по PSD макету.
@@ -270,17 +270,17 @@
 				<!-- //Работа 4 -->
 
 				<!-- Работа 5 -->
-				<div class="col-md-4">
+				<div class="col-md-4 mix bootstrap payed">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
-							<a href="#" class="portfolio-item__image-hover">
+							<a href="usercontent/img/full/motorcycles.jpg" class="fancybox portfolio-item__image-hover" rel="group" title="Магазин мотоциклов">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
 							</a>
 							<img src="usercontent/img/project_moto.jpg" alt="Магазин мотоциклов">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Магазин мотоциклов</a>
+							<a href="usercontent/img/full/motorcycles.jpg" class="fancybox" rel="group1" title="Магазин мотоциклов">Магазин мотоциклов</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка лендинга для компании Indian Motorcycles.
@@ -290,17 +290,17 @@
 				<!-- //Работа 5 -->
 
 				<!-- Работа 6 -->
-				<div class="col-md-4">
+				<div class="col-md-4 mix html-css payed">
 					<div class="portfolio-item">
 						<div class="portfolio-item__image">
-							<a href="#" class="portfolio-item__image-hover">
+							<a href="usercontent/img/full/music.jpg" class="fancybox portfolio-item__image-hover" rel="group" title="Магазин аудиотехники">
 								<i class="fa fa-search" aria-hidden="true"></i><br>
 								<span>смотреть макет</span>
 							</a>
 							<img src="usercontent/img/project_music.jpg" alt="Магазин аудиотехники">
 						</div>
 						<div class="portfolio-item__title">
-							<a href="#">Магазин аудиотехники</a>
+							<a href="usercontent/img/full/music.jpg" class="fancybox" rel="group1" title="Магазин аудиотехники">Магазин аудиотехники</a>
 						</div>
 						<div class="portfolio-item__description">
 							Верстка страниц для магазина винтажной аудиотехники.
@@ -351,8 +351,13 @@
 
 	<!-- Vendor script -->
 	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
+	<script src="libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+
 	<script src="libs/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	<script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+
 
 	<!-- User script -->
 	<script src="js/main.js"></script>

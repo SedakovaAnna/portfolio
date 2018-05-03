@@ -10,7 +10,8 @@
 	// text-align: center;
 	// box-shadow: 0px 3px 15px 0px rgba(0, 82, 194, 0.5);
 	box-shadow: 0px 3px 15px 0px @blueHeading;
-
+	cursor: pointer;
+	text-decoration: none;
 
 	.fa {
 		font-size: 18px;
@@ -20,4 +21,17 @@
 	// @media (min-width: 768px) {
 	// 		width: auto;
 	// 	}
+// , &:focus 
+
+	&:hover{
+			text-decoration: none;
+			color: @blueHeading;
+			background-color: #fff;
+		}
+
+	&:active {
+		text-decoration: none;
+			color: @yellow;
+			background-color: @blueHeading;
+		}
 }
